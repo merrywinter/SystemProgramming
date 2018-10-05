@@ -4,8 +4,8 @@
 
 int main ()
 {
-	char *fname = "test.txt";
-	//char *fname = "test1.txt";
+	//char *fname = "test.txt";
+	char *fname = "test1.txt";
 
 	if (access (fname, R_OK) == -1)
 	{

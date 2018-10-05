@@ -9,7 +9,7 @@ int main ()
 	
 	memset (buf, 0, sizeof(buf));
 
-	nread = readlink ("soft1.txt", buf, 255);
+	nread = readlink ("merong", buf, 255);
 	write(1, buf, nread);
 	printf ("\n");
 	return 0;
