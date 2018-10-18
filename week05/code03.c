@@ -26,7 +26,7 @@ while (dentry = readdir (dp))
 
 	while (dentry = readdir (dp))
 	{
-		if (dentry->d_ino == 0)
+		if (dentry->d_ino != 0)
 			printf ("%s\n", dentry->d_name);
 	}
 
