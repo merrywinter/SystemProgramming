@@ -6,6 +6,7 @@ void func1(void);
 void func2(void);
 
 int main(){
+
 	printf ("Hello!\n");
 	atexit (func1);
 	atexit (func2);
