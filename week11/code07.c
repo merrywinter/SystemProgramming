@@ -3,8 +3,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-int main ()
-{
+int main(){
 	pid_t pid;
 
 	if((pid = fork()) > 0){
