@@ -28,10 +28,11 @@ int main(){
 	printf("START\n >");
 	scanf("%s", buf);
 
-	if(!strcmp (buf, alpha))
+	if(!strcmp(buf, alpha))
 		printf(":)\n");
 	else	
 		printf(":(\n");
+	
 	return 0;
 }
 

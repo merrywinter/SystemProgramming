@@ -13,8 +13,7 @@ int main(){
 		kill(pid, SIGINT);
 		raise(SIGINT);
 		printf("[parent] Bye!\n");
-	}
-	
+	}	
 	else if(pid == 0){
 		while(count){
 			printf("[child] count is %d\n", count--);

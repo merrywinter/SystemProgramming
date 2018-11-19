@@ -7,6 +7,7 @@ void handler(int signum){
 }
 
 int main(){
+
 	struct sigaction act;
 	
 	sigfillset(&(act.sa_mask));

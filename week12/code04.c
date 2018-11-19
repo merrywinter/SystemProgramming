@@ -10,7 +10,6 @@ int main(){
 	sigemptyset(&set);
 	sigaddset(&set, SIGINT);
 	sigprocmask(SIG_BLOCK, &set, NULL);
-
 	
 	while(count){
 		printf("-_- (%d)\n", count--);

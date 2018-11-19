@@ -14,7 +14,8 @@ int main(){
 	act.sa_handler = int_handle;
 	sigfillset(&(act.sa_mask));
 	sigaction(SIGINT, &act, NULL);
-	while (1){
+
+	while(1){
 		printf("zzzZ\n");
 		sleep(1);
 		if(num >= 2){
