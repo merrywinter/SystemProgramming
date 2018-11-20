@@ -19,7 +19,7 @@ int main(){
 		printf("zzzZ\n");
 		sleep(1);
 		if(num >= 2){
-			act.sa_handler = SIG_DFL;
+			act.sa_handler = SIG_DFL;	//디폴트 액
 			sigaction(SIGINT, &act, NULL);
 		}
 	}
