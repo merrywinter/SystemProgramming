@@ -19,7 +19,7 @@ int main(){
 	if(pid1 > 0 && pid2 > 0){ // Parent Process
 		waitpid (pid2, &status, 0);
 		
-        printf ("Parent: child2 - exit(%d)\n", status);
+        	printf ("Parent: child2 - exit(%d)\n", status);
 		waitpid (pid1, &status, 0);
 		printf ("Parent: child1 - exit(%d)\n", status);
 	}
