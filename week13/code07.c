@@ -6,10 +6,8 @@
 #include <unistd.h>
 
 #define SIZE	sizeof (struct sockaddr_in)
-int sockfd_connect;
 
-void main ()
-{
+int main(){
 	int sockfd_listen, sockfd_connect;
 	char c;
 	struct sockaddr_in server = {AF_INET, 1234, INADDR_ANY};
@@ -20,14 +18,16 @@ void main ()
 	
 	/* ex13_04: socket listen part */
 	
-while (1)
-	{
+while(1){
 		/* ex13_05: socket connect part */
 		
-		while (recv (sockfd_connect, &c, 1, 0) > 0)
-			send (sockfd_connect, &c, 1, 0);
+		while(recv (sockfd_connect, &c, 1, 0) > 0)
+			send(sockfd_connect, &c, 1, 0);
 		
-		close (sockfd_connect);
+		close(sockfd_connect);
 	}
+
+	return 0;
+
 }
 

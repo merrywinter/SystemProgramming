@@ -4,18 +4,19 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-void main ()
-{
+int main(){
+	
 	int sockfd;
 	
-	if ((sockfd = socket (AF_INET, SOCK_STREAM, 0)) == -1)
-	{
+	if((sockfd = socket (AF_INET, SOCK_STREAM, 0)) == -1){
 		printf ("Socket Open Fail\n");
 		exit(1);
 	}
 
-	printf ("Socket descriptor: %d\n", sockfd);
+	printf("Socket descriptor: %d\n", sockfd);
 
-	close (sockfd);
+	close(sockfd);
+	
+	return 0;
 }
 
