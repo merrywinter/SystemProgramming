@@ -17,7 +17,7 @@ void main ()
 {
 	int sockfd_listen;
 	char c;
-	struct sockaddr_in server = {AF_INET, 1234, INADDR_ANY};
+	struct sockaddr_in server = {AF_INET, htons(1234), INADDR_ANY};
 	struct sigaction act;
 
 	act.sa_handler = closesock;

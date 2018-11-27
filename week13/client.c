@@ -13,7 +13,7 @@ void main ()
 {
 	int sockfd;
 	char send_c, recv_c;
-	struct sockaddr_in server ={AF_INET, 1234};
+	struct sockaddr_in server ={AF_INET, htons(1234)};
 
 	server.sin_addr.s_addr = inet_addr ("127.0.0.1");
 
