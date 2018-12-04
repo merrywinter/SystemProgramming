@@ -28,9 +28,9 @@ int main(int argc, char *argv[]){
 	if(hent->h_addrtype == AF_INET){
 		ptr = hent->h_addr_list;
 
-		while(*ptr != NULL){
-			printf ("\taddress: %s\n", inet_ntoa(*((struct in_addr *)*ptr)));
-			*ptr++;
+	while(*ptr != NULL){
+		printf ("\taddress: %s\n", inet_ntoa(*((struct in_addr *)*ptr)));
+		*ptr++;
 		}
 	}
 
